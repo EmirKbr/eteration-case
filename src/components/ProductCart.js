@@ -8,10 +8,7 @@ const ProductCard = ({ product }) => {
     const dispatch = useDispatch();
     const handleAddToCart = () => {
         if (product) {
-            console.log("Ürün sepete ekleniyor:", product);
             dispatch(addToCart(product));
-        } else {
-            console.log("Ürün bulunamadı.");
         }
     };
     return (

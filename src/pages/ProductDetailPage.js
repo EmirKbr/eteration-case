@@ -28,10 +28,7 @@ const ProductDetailPage = () => {
 
   const handleAddToCart = () => {
     if (product) {
-      console.log("Ürün sepete ekleniyor:", product);
       dispatch(addToCart(product));
-    } else {
-      console.log("Ürün bulunamadı.");
     }
   };
 
